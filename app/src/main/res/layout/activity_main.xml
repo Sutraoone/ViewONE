@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpng"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="15dp">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENTER WEBSITE LINK"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+          <EditText
+              android:id="@+id/et_link"
+              android:layout_marginTop="10dp"
+              android:layout_margin="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="ENTER LINK"
+              android:textAlignment="center"
+              android:background="@drawable/custom_edit_text"
+              android:textSize="30sp"
+              android:padding="8dp"
+              android:singleLine="true"
+              android:textColorHint="#F44E42"/>
+          <TextView
+              android:layout_marginTop="5dp"
+              android:textStyle="bold"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="ENTER SCREEN"
+              android:textAlignment="center"
+              android:textSize="20dp"
+              android:textColor="@color/black"/>
+
+          <EditText
+              android:id="@+id/et_ssize"
+              android:layout_marginTop="10dp"
+              android:layout_margin="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="number"
+              android:hint="ENTER SIZE"
+              android:textAlignment="center"
+              android:background="@drawable/custom_edit_text"
+              android:textSize="30sp"
+              android:padding="8dp"
+              android:singleLine="true"
+              android:textColorHint="#F44E42"/>
+            <CheckBox
+                android:id="@+id/cb_screen_sleep_off"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCREEN SLEEP OFF"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+          <CheckBox
+              android:id="@+id/cb_desktop_view"
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="DESKTOP VIEW"
+              android:textStyle="bold"
+              android:textSize="20dp"/>
+          <Switch
+              android:id="@+id/swtbtn_auto_referesh"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="AUTO REFERESH"
+              android:layout_gravity="center"
+              android:textSize="20dp"
+              android:textStyle="bold"  
+              />
+        <EditText
+            android:id="@+id/et_auto_refresh"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ENTER SECOND"
+            android:background="@drawable/custom_edit_text"
+            android:padding="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            />
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:background="@drawable/rectengle_button"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            />
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
