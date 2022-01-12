@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundpng"
+    android:keepScreenOn="true"
     android:padding="25dp"
     tools:context=".MainActivity">
     <androidx.cardview.widget.CardView
@@ -12,6 +13,9 @@
         android:layout_height="match_parent"
         app:cardCornerRadius="25dp"
         app:cardElevation="15dp">
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="match_parent"
@@ -44,25 +48,20 @@
               android:textStyle="bold"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="ENTER SCREEN"
+              android:text="SELECT SCREEN"
               android:textAlignment="center"
               android:textSize="20dp"
               android:textColor="@color/black"/>
 
-          <EditText
-              android:id="@+id/et_ssize"
-              android:layout_marginTop="10dp"
-              android:layout_margin="10dp"
+          <NumberPicker
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:inputType="number"
-              android:hint="ENTER SIZE"
-              android:textAlignment="center"
               android:background="@drawable/custom_edit_text"
-              android:textSize="30sp"
-              android:padding="8dp"
-              android:singleLine="true"
-              android:textColorHint="#F44E42"/>
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginBottom="20dp"
+              android:id="@+id/screenSize"/>
             <CheckBox
                 android:id="@+id/cb_screen_sleep_off"
                 android:layout_gravity="center"
@@ -93,7 +92,8 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="ENTER SECOND"
+            android:hint="ENTER MINUTE"
+            android:inputType="number"
             android:background="@drawable/custom_edit_text"
             android:padding="10dp"
             android:layout_marginLeft="50dp"
@@ -113,6 +113,7 @@
             android:textSize="30dp"
             />
       </LinearLayout>
+      </ScrollView>
     </androidx.cardview.widget.CardView>
 
 
