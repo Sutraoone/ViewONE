@@ -211,15 +211,71 @@ public class MainActivity extends AppCompatActivity {
                 {
                     et_link.setError("Enter Link ??");
                     et_link.requestFocus();
-                }else if(flag.equalsIgnoreCase("True"))
+                }
+                else if(flag.equalsIgnoreCase("True"))
                 {
                     if(test.isEmpty())
                     {
                         et_auto_refresh.setError("Enter Time");
                         et_auto_refresh.requestFocus();
                     }
+                    if(!test.isEmpty())
+                    {
+                        intent.putExtra("url", link);
+                        intent4.putExtra("url", link);
+                        intent6.putExtra("url", link);
+                        intent8.putExtra("url", link);
+                        intent10.putExtra("url", link);
+                        intent12.putExtra("url", link);
+                        intent14.putExtra("url", link);
+                        intent16.putExtra("url", link);
+                        intent18.putExtra("url", link);
+                        intent20.putExtra("url", link);
+
+                        if (selected.equalsIgnoreCase("2"))
+                        {
+                            startActivity(intent);
+                        }
+                        if (selected.equalsIgnoreCase("4"))
+                        {
+                            startActivity(intent4);
+                        }
+                        if (selected.equalsIgnoreCase("6"))
+                        {
+                            startActivity(intent6);
+                        }
+                        if (selected.equalsIgnoreCase("8"))
+                        {
+                            startActivity(intent8);
+                        }
+                        if (selected.equalsIgnoreCase("10"))
+                        {
+                            startActivity(intent10);
+                        }
+                        if (selected.equalsIgnoreCase("12"))
+                        {
+                            startActivity(intent12);
+                        }
+                        if (selected.equalsIgnoreCase("14"))
+                        {
+                            startActivity(intent14);
+                        }
+                        if (selected.equalsIgnoreCase("16"))
+                        {
+                            startActivity(intent16);
+                        }
+                        if (selected.equalsIgnoreCase("18"))
+                        {
+                            startActivity(intent18);
+                        }
+                        if (selected.equalsIgnoreCase("20"))
+                        {
+                            startActivity(intent20);
+                        }
+
+                    }
                 }
-                else {
+                else  {
                     intent.putExtra("url", link);
                     intent4.putExtra("url", link);
                     intent6.putExtra("url", link);
@@ -273,6 +329,5 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }});
-
     }
 } 
