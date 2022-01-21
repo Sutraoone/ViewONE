@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gurupatidar.viewone">
+    package="com.gurupatidar.Jaadugar">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,37 +12,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ViewONE">
         <activity
-            android:name=".Screen20"
+            android:name="com.gurupatidar.Jaadugar.Screen20"
             android:exported="false" />
         <activity
-            android:name=".Screen18"
+            android:name="com.gurupatidar.Jaadugar.Screen18"
             android:exported="false" />
         <activity
-            android:name=".Screen16"
+            android:name="com.gurupatidar.Jaadugar.Screen16"
             android:exported="false" />
         <activity
-            android:name=".Screen14"
+            android:name="com.gurupatidar.Jaadugar.Screen14"
             android:exported="false" />
         <activity
-            android:name=".Screen12"
+            android:name="com.gurupatidar.Jaadugar.Screen12"
             android:exported="false" />
         <activity
-            android:name=".Screen10"
+            android:name="com.gurupatidar.Jaadugar.Screen10"
             android:exported="false" />
         <activity
-            android:name=".Screen8"
+            android:name="com.gurupatidar.Jaadugar.Screen8"
             android:exported="false" />
         <activity
-            android:name=".Screen6"
+            android:name="com.gurupatidar.Jaadugar.Screen6"
             android:exported="false" />
         <activity
-            android:name=".Screen4"
+            android:name="com.gurupatidar.Jaadugar.Screen4"
             android:exported="false" />
         <activity
-            android:name=".WebViewActivity"
+            android:name="com.gurupatidar.Jaadugar.WebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".SpleshScreen"
+            android:name="com.gurupatidar.Jaadugar.SpleshScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,7 +51,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.gurupatidar.Jaadugar.MainActivity"
             android:exported="true" />
     </application>
 

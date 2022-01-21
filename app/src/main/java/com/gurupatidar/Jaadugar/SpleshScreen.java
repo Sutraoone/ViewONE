@@ -1,12 +1,10 @@
-package com.gurupatidar.viewone;
+package com.gurupatidar.Jaadugar;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 
 public class SpleshScreen extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.gurupatidar.viewone;
+package com.gurupatidar.Jaadugar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,15 +9,14 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Screen14 extends AppCompatActivity {
+public class Screen10 extends AppCompatActivity {
     long time;
-    WebView webView,webView2,webView3,webView4,webView5,webView6,webView7,webView8,webView9,webView10,webView11,webView12
-            ,webView13,webView14;
+    WebView webView,webView2,webView3,webView4,webView5,webView6,webView7,webView8,webView9,webView10;
     String url,desk,flag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen14);
+        setContentView(R.layout.activity_screen10);
 
         webView = (WebView) findViewById(R.id.webView);
         webView2=(WebView) findViewById(R.id.webView2);
@@ -29,20 +28,16 @@ public class Screen14 extends AppCompatActivity {
         webView8=(WebView) findViewById(R.id.webView8);
         webView9=(WebView) findViewById(R.id.webView9);
         webView10=(WebView) findViewById(R.id.webView10);
-        webView11=(WebView) findViewById(R.id.webView11);
-        webView12=(WebView) findViewById(R.id.webView12);
-        webView13=(WebView) findViewById(R.id.webView13);
-        webView14=(WebView) findViewById(R.id.webView14);
 
         time=99999999999l;
-        Intent intent14=getIntent();
-        url=intent14.getStringExtra("url");
-        desk=intent14.getStringExtra("desktop");
-        flag=intent14.getStringExtra("flag");
+        Intent intent10=getIntent();
+        url=intent10.getStringExtra("url");
+        desk=intent10.getStringExtra("desktop");
+        flag=intent10.getStringExtra("flag");
 
         if(flag.equalsIgnoreCase("True"))
         {
-            time=intent14.getLongExtra("time",100000l);
+            time=intent10.getLongExtra("time",100000l);
         }
 
         webView.getSettings().setLoadsImagesAutomatically(true);
@@ -178,59 +173,6 @@ public class Screen14 extends AppCompatActivity {
             webView10.getSettings().setBuiltInZoomControls(true);
             webView10.getSettings().setUserAgentString("Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0");
         }
-
-        webView11.getSettings().setLoadsImagesAutomatically(true);
-        webView11.getSettings().setJavaScriptEnabled(true);
-        webView11.setScrollBarStyle(View.SCROLLBARS_INSIDE_INSET);
-
-        webView11.getSettings().setMediaPlaybackRequiresUserGesture(false);
-        if(desk.equalsIgnoreCase("true"))
-        {
-            webView11.getSettings().setLoadWithOverviewMode(true);
-            webView11.getSettings().setUseWideViewPort(true);
-            webView11.getSettings().setDomStorageEnabled(true);
-            webView11.getSettings().setBuiltInZoomControls(true);
-            webView11.getSettings().setUserAgentString("Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0");
-        }
-        webView12.getSettings().setLoadsImagesAutomatically(true);
-        webView12.getSettings().setJavaScriptEnabled(true);
-        webView12.setScrollBarStyle(View.SCROLLBARS_INSIDE_INSET);
-
-        webView12.getSettings().setMediaPlaybackRequiresUserGesture(false);
-        if(desk.equalsIgnoreCase("true"))
-        {
-            webView12.getSettings().setLoadWithOverviewMode(true);
-            webView12.getSettings().setUseWideViewPort(true);
-            webView12.getSettings().setDomStorageEnabled(true);
-            webView12.getSettings().setBuiltInZoomControls(true);
-            webView12.getSettings().setUserAgentString("Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0");
-        }
-        webView13.getSettings().setLoadsImagesAutomatically(true);
-        webView13.getSettings().setJavaScriptEnabled(true);
-        webView13.setScrollBarStyle(View.SCROLLBARS_INSIDE_INSET);
-
-        webView13.getSettings().setMediaPlaybackRequiresUserGesture(false);
-        if(desk.equalsIgnoreCase("true"))
-        {
-            webView13.getSettings().setLoadWithOverviewMode(true);
-            webView13.getSettings().setUseWideViewPort(true);
-            webView13.getSettings().setDomStorageEnabled(true);
-            webView13.getSettings().setBuiltInZoomControls(true);
-            webView13.getSettings().setUserAgentString("Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0");
-        }
-        webView14.getSettings().setLoadsImagesAutomatically(true);
-        webView14.getSettings().setJavaScriptEnabled(true);
-        webView14.setScrollBarStyle(View.SCROLLBARS_INSIDE_INSET);
-
-        webView14.getSettings().setMediaPlaybackRequiresUserGesture(false);
-        if(desk.equalsIgnoreCase("true"))
-        {
-            webView14.getSettings().setLoadWithOverviewMode(true);
-            webView14.getSettings().setUseWideViewPort(true);
-            webView14.getSettings().setDomStorageEnabled(true);
-            webView14.getSettings().setBuiltInZoomControls(true);
-            webView14.getSettings().setUserAgentString("Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0");
-        }
         webView.loadUrl(url);
         webView2.loadUrl(url);
         webView3.loadUrl(url);
@@ -241,11 +183,6 @@ public class Screen14 extends AppCompatActivity {
         webView8.loadUrl(url);
         webView9.loadUrl(url);
         webView10.loadUrl(url);
-        webView11.loadUrl(url);
-        webView12.loadUrl(url);
-        webView13.loadUrl(url);
-        webView14.loadUrl(url);
-
         webView.setWebViewClient(new WebViewClient());
         webView2.setWebViewClient(new WebViewClient());
         webView3.setWebViewClient(new WebViewClient());
@@ -256,10 +193,6 @@ public class Screen14 extends AppCompatActivity {
         webView8.setWebViewClient(new WebViewClient());
         webView9.setWebViewClient(new WebViewClient());
         webView10.setWebViewClient(new WebViewClient());
-        webView11.setWebViewClient(new WebViewClient());
-        webView12.setWebViewClient(new WebViewClient());
-        webView13.setWebViewClient(new WebViewClient());
-        webView14.setWebViewClient(new WebViewClient());
         content();
     }
     public void content()
@@ -285,11 +218,6 @@ public class Screen14 extends AppCompatActivity {
                 webView8.loadUrl(url);
                 webView9.loadUrl(url);
                 webView10.loadUrl(url);
-                webView11.loadUrl(url);
-                webView12.loadUrl(url);
-                webView13.loadUrl(url);
-                webView14.loadUrl(url);
-
                 webView.setWebViewClient(new WebViewClient());
                 webView2.setWebViewClient(new WebViewClient());
                 webView3.setWebViewClient(new WebViewClient());
@@ -300,10 +228,6 @@ public class Screen14 extends AppCompatActivity {
                 webView8.setWebViewClient(new WebViewClient());
                 webView9.setWebViewClient(new WebViewClient());
                 webView10.setWebViewClient(new WebViewClient());
-                webView11.setWebViewClient(new WebViewClient());
-                webView12.setWebViewClient(new WebViewClient());
-                webView13.setWebViewClient(new WebViewClient());
-                webView14.setWebViewClient(new WebViewClient());
             }
         };
         handler.postDelayed(runnable,time);

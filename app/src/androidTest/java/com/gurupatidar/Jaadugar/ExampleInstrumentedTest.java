@@ -1,4 +1,4 @@
-package com.gurupatidar.viewone;
+package com.gurupatidar.Jaadugar;
 
 import android.content.Context;
 
